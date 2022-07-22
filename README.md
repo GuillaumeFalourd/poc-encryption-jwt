@@ -1,25 +1,70 @@
-# <repo_name>
+# POC JWT encryption
 
-[![Security Pipeline](https://github.com/GuillaumeFalourd/<repo_name>/actions/workflows/security-pipeline.yml/badge.svg)](https://github.com/GuillaumeFalourd/<repo_name>/actions/workflows/security-pipeline.yml) [![Super Linter](https://github.com/GuillaumeFalourd/<repo_name>/actions/workflows/super-linter.yml/badge.svg)](https://github.com/GuillaumeFalourd/<repo_name>/actions/workflows/super-linter.yml) [![Gitleaks](https://github.com/GuillaumeFalourd/<repo_name>/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/GuillaumeFalourd/<repo_name>/actions/workflows/gitleaks.yml)
+[![Security Pipeline](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/security-pipeline.yml/badge.svg)](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/security-pipeline.yml) [![Super Linter](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/super-linter.yml/badge.svg)](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/super-linter.yml) [![Gitleaks](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/gitleaks.yml)
 
-☞ Github repository template to create other personal repositories 🧑‍💻🏗
+## Setup
 
-## 📚 What is Lorem Ipsum?
+To install the dependencies, run the following command at the repository `root`:
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+```sh
+pip install -r requirements.txt
+```
+
+## Usage
+
+To execute the program, run the following command at thre repository `root`:
+
+```sh
+python3 main.py
+```
+
+It should display:
+
+```txt
+- The program started!
+? What do you want to do? (Use arrow keys)
+ » Encrypt
+   Decrypt
+```
+
+1. You will need to create an `.encrypted_file` first at the repository `root` choosing the **Encrypt** option.
+   1. This `.encrypted_file` will contains a JWT containing an cryptographed data (the user **machine_id**).
+
+2. To decrypt the `.encrypted_file` generated at the repository `root`, choose the **Decrypt** option.
+   1. The program will compare the JWT decoded **machine_id** with the user machine_id to check if the token is valid (**Valid** in that case means it has been generated on the same machine)
+
+
+## Generate new key pair
+
+```markdown
+ssh-keygen -t rsa -b 4096 -m PEM -f jwtRS256.key
+openssl rsa -in jwtRS256.key -pubout -outform PEM -out jwtRS256.key.pub
+
+cat jwtRS256.key # private key
+cat jwtRS256.key.pub # public key
+```
+
+The `jwtRS256.key` and the `jwtRS256.key.pub` files need to be located on the `./encryption` folder.
+
+
+## TODOs
+
+- [ ] Add Unit tests.
+- [ ] Add Unit tests pipelines.
+
 
 ## 🤝 Contributing
 
-☞ If you're interested in contributing to this repository, please follow the [guidelines](https://github.com/GuillaumeFalourd/<repo_name>/blob/main/CONTRIBUTING.md)
+☞ If you're interested in contributing to this repository, please follow the [guidelines](https://github.com/GuillaumeFalourd/poc-encryption-jwt/blob/main/CONTRIBUTING.md)
 
 ## 🏅 Licensed
 
-☞ This repository uses the [Apache License 2.0](https://github.com/GuillaumeFalourd/<repo_name>/blob/main/LICENSE)
+☞ This repository uses the [Apache License 2.0](https://github.com/GuillaumeFalourd/poc-encryption-jwt/blob/main/LICENSE)
 
 <!-- ### Contribuidores
 
-<a href="https://github.com/GuillaumeFalourd/<repo_name>/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=GuillaumeFalourd/<repo_name>" />
+<a href="https://github.com/GuillaumeFalourd/poc-encryption-jwt/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=GuillaumeFalourd/poc-encryption-jwt" />
 </a>
 
 (Criado com [contributors-img](https://contrib.rocks)) -->
