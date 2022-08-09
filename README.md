@@ -4,6 +4,17 @@
 <!-- markdownlint-restore -->
 
 
+## 📋 Index
+
+- [Setup](https://github.com/GuillaumeFalourd/poc-encryption-jwt#-setup)
+- [Usage](https://github.com/GuillaumeFalourd/poc-encryption-jwt#-usage)
+- [Generate new Key Pair](https://github.com/GuillaumeFalourd/poc-encryption-jwt#%EF%B8%8F-generate-new-key-pair)
+- [TODOs](https://github.com/GuillaumeFalourd/poc-encryption-jwt#todos)
+- [JWT Concept](https://github.com/GuillaumeFalourd/poc-encryption-jwt#-jwt-concept)
+- [Contributing](https://github.com/GuillaumeFalourd/poc-encryption-jwt#-contributing)
+- [License](https://github.com/GuillaumeFalourd/poc-encryption-jwt#-licensed)
+
+
 ## 🏗 Setup
 
 To install the dependencies, run the following command at the repository `root`:
