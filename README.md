@@ -33,7 +33,7 @@ It should display:
 2. To decrypt the `.encrypted_file` generated at the repository `root`, choose the **Decrypt** option.
    1. The program will compare the JWT decoded **machine_id** with the user machine_id to check if the token is valid (**Valid** in that case means it has been generated on the same machine)
    
-_Note: It's also possible to check the `.encrypted_file` content on the [jwt.io](https://jwt.io/] web site._
+_Note: It's also possible to check the `.encrypted_file` content on the [jwt.io](https://jwt.io/) web site._
 
 ## Generate new key pair
 
