@@ -1,6 +1,7 @@
 # POC JWT encryption
-
+<!-- markdownlint-disable -->
 [![Security Pipeline](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/security-pipeline.yml/badge.svg)](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/security-pipeline.yml) [![Super Linter](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/super-linter.yml/badge.svg)](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/super-linter.yml) [![Gitleaks](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/gitleaks.yml)
+<!-- markdownlint-restore -->
 
 
 ## 🏗 Setup
@@ -34,8 +35,8 @@ It should display:
 
 2. To decrypt the `.encrypted_file` generated at the repository `root`, choose the **Decrypt** option.
    1. The program will compare the JWT decoded **machine_id** with the user machine_id to check if the token is valid (**Valid** in that case means it has been generated on the same machine)
-   
-_Note: It's also possible to check the JWT present in the `.encrypted_file` content on the [jwt.io](https://jwt.io/) web site._
+
+_Note: It's also possible to check the JWT present in the `.encrypted_file` content on [jwt.io](https://jwt.io/)._
 
 
 ## ⚙️ Generate new key pair
