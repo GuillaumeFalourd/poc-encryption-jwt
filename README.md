@@ -2,6 +2,7 @@
 
 [![Security Pipeline](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/security-pipeline.yml/badge.svg)](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/security-pipeline.yml) [![Super Linter](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/super-linter.yml/badge.svg)](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/super-linter.yml) [![Gitleaks](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/gitleaks.yml)
 
+
 ## Setup
 
 To install the dependencies, run the following command at the repository `root`:
@@ -9,6 +10,7 @@ To install the dependencies, run the following command at the repository `root`:
 ```sh
 pip install -r requirements.txt
 ```
+
 
 ## Usage
 
@@ -35,6 +37,7 @@ It should display:
    
 _Note: It's also possible to check the `.encrypted_file` content on the [jwt.io](https://jwt.io/) web site._
 
+
 ## Generate new key pair
 
 ```markdown
@@ -52,6 +55,11 @@ The `jwtRS256.key` and the `jwtRS256.key.pub` files need to be located on the `.
 
 - [ ] Add Unit tests.
 - [ ] Add Unit tests pipelines.
+
+
+## JWT Concept
+
+![jwt](/jwt.jpeg)
 
 
 ## 🤝 Contributing
