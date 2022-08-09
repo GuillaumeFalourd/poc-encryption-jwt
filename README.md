@@ -3,7 +3,7 @@
 [![Security Pipeline](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/security-pipeline.yml/badge.svg)](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/security-pipeline.yml) [![Super Linter](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/super-linter.yml/badge.svg)](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/super-linter.yml) [![Gitleaks](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/GuillaumeFalourd/poc-encryption-jwt/actions/workflows/gitleaks.yml)
 
 
-## Setup
+## 🏗 Setup
 
 To install the dependencies, run the following command at the repository `root`:
 
@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ```
 
 
-## Usage
+## 🚦 Usage
 
 To execute the program, run the following command at thre repository `root`:
 
@@ -35,10 +35,10 @@ It should display:
 2. To decrypt the `.encrypted_file` generated at the repository `root`, choose the **Decrypt** option.
    1. The program will compare the JWT decoded **machine_id** with the user machine_id to check if the token is valid (**Valid** in that case means it has been generated on the same machine)
    
-_Note: It's also possible to check the `.encrypted_file` content on the [jwt.io](https://jwt.io/) web site._
+_Note: It's also possible to check the JWT present in the `.encrypted_file` content on the [jwt.io](https://jwt.io/) web site._
 
 
-## Generate new key pair
+## ⚙️ Generate new key pair
 
 ```markdown
 ssh-keygen -t rsa -b 4096 -m PEM -f jwtRS256.key
@@ -57,7 +57,7 @@ The `jwtRS256.key` and the `jwtRS256.key.pub` files need to be located on the `.
 - [ ] Add Unit tests pipelines.
 
 
-## JWT Concept
+## 🧐 JWT Concept
 
 ![jwt](/jwt.jpeg)
 
