@@ -74,6 +74,11 @@ The `jwtRS256.key` and the `jwtRS256.key.pub` files need to be located on the `.
 ![jwt](/jwt.jpeg)
 
 
+### Referências
+
+_[Alexandre Fidélis Vieira Bitencourt](https://github.com/alexandrefvb): O JWS garante através de uma assinatura digital (que usa algoritmos criptográficos) a integridade da informação que está no token, mas não garante a confidencialidade das informações. Vale lembrar que quando lidamos com tokens JWT é muito importante que a assinatura seja verificada para garantir que o conteúdo do token não tenha sido alterado. O objetivo principal do token JWT no formato JWS é justamente permitir que os claims sejam inspecionados a fim de obter informações importantes para identificar o usuário, suas permissões e outras informações relevantes para o processo de autenticação/autorização de forma que sua sua integridade esteja garantida. O algoritmo usado para assinar o token vai variar dependendo de como será o processo de verificação podendo ser um algoritmo simétrico (uma chave apenas) ou assimétrico (usando uma chave privada para gerar o token e uma chave pública para verificar a assinatura). [Post que resume bem alguns conceitos](https://www.brunobrito.net.br/jose-jwt-jws-jwe-jwa-jwk-jwks/)_
+
+
 ## 🏅 Licensed
 
 ☞ This repository uses the [Apache License 2.0](https://github.com/GuillaumeFalourd/poc-encryption-jwt/blob/main/LICENSE)
