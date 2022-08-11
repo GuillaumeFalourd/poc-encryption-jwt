@@ -89,4 +89,4 @@ The `jwtRS256.key` and the `jwtRS256.key.pub` files need to be located on the `.
   <img src="https://contrib.rocks/image?repo=GuillaumeFalourd/poc-encryption-jwt" />
 </a>
 
-(Criado com [contributors-img](https://contrib.rocks)) -->
+(Criado com [contributors-img](https://contrib.rocks))
