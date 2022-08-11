@@ -74,7 +74,7 @@ The `jwtRS256.key` and the `jwtRS256.key.pub` files need to be located on the `.
 ![jwt](/jwt.jpeg)
 
 
-### Referências 
+### References in 🇧🇷
 
 O JWS garante através de uma assinatura digital (que usa algoritmos criptográficos) a integridade da informação que está no token, mas não garante a confidencialidade das informações. Vale lembrar que quando lidamos com tokens JWT é muito importante que a assinatura seja verificada para garantir que o conteúdo do token não tenha sido alterado. 
 
