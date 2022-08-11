@@ -84,7 +84,7 @@ O algoritmo usado para assinar o token vai variar dependendo de como será o pro
 
 [Post que resume bem alguns conceitos](https://www.brunobrito.net.br/jose-jwt-jws-jwe-jwa-jwk-jwks/)
 
-_[Alexandre Fidélis Vieira Bitencourt](https://github.com/alexandrefvb)_
+_By [Alexandre Fidélis Vieira Bitencourt](https://github.com/alexandrefvb)_
 
 
 ## 🏅 Licensed
