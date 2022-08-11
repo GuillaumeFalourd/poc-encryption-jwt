@@ -74,15 +74,16 @@ The `jwtRS256.key` and the `jwtRS256.key.pub` files need to be located on the `.
 ![jwt](/jwt.jpeg)
 
 
-## 🤝 Contributing
-
-☞ If you're interested in contributing to this repository, please follow the [guidelines](https://github.com/GuillaumeFalourd/poc-encryption-jwt/blob/main/CONTRIBUTING.md)
-
 ## 🏅 Licensed
 
 ☞ This repository uses the [Apache License 2.0](https://github.com/GuillaumeFalourd/poc-encryption-jwt/blob/main/LICENSE)
 
-<!-- ### Contribuidores
+
+## 🤝 Contributing
+
+☞ If you're interested in contributing to this repository, please follow the [guidelines](https://github.com/GuillaumeFalourd/poc-encryption-jwt/blob/main/CONTRIBUTING.md)
+
+### Contribuidores
 
 <a href="https://github.com/GuillaumeFalourd/poc-encryption-jwt/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=GuillaumeFalourd/poc-encryption-jwt" />
