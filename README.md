@@ -82,7 +82,7 @@ O objetivo principal do token JWT no formato JWS é justamente permitir que os c
 
 O algoritmo usado para assinar o token vai variar dependendo de como será o processo de verificação podendo ser um algoritmo simétrico (uma chave apenas) ou assimétrico (usando uma chave privada para gerar o token e uma chave pública para verificar a assinatura). 
 
-[Post que resume bem alguns conceitos](https://www.brunobrito.net.br/jose-jwt-jws-jwe-jwa-jwk-jwks/)_
+[Post que resume bem alguns conceitos](https://www.brunobrito.net.br/jose-jwt-jws-jwe-jwa-jwk-jwks/)
 
 _[Alexandre Fidélis Vieira Bitencourt](https://github.com/alexandrefvb)_
 
