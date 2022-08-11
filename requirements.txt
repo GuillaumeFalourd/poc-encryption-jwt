@@ -1,3 +1,4 @@
 pydantic
 cryptography
 pyjwt
+questionary
